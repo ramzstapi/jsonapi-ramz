@@ -8,8 +8,7 @@ Technologies:
 3. Javascript
 4. GSAP
 5. jQuery
-6. Velocity.JS
+6. Velocity.js
 7. Font Awesome
-8. Smooth Scroll Plugin (From
-9. Ion Icons
-10. SmoothScroll.js
+8. Ion Icons
+9. SmoothScroll.js
