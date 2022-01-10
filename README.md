@@ -11,4 +11,4 @@ Technologies:
 6. Velocity.js
 7. Font Awesome
 8. Ion Icons
-9. SmoothScroll.js
+9. SmoothScroll.js <= Inactive
