@@ -12,3 +12,7 @@ Technologies:
 7. Font Awesome
 8. Ion Icons
 9. SmoothScroll.js <= Inactive
+
+Oh i almost forgot, so if you wanna see my portfolio with best experience, change the resolution to 1920 x 1080 and display zoom to 100%, example below
+
+![image](https://user-images.githubusercontent.com/97384153/149063086-1a1812f3-9b3d-490d-9013-5dbb501d12a7.png)
