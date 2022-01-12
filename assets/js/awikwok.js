@@ -42,3 +42,38 @@ gsap.to(".page-load", {
     y: -2000,
     ease: "power4.inOut"
 })
+
+
+gsap.from(".recommended-view", {
+    delay: 3.6,
+    duration: 1,
+    y: 300,
+    ease: "power4.inOut"
+})
+
+const accept = document.querySelector(".accept");
+accept.addEventListener('click', () =>{
+    gsap.to(".recommended-view", {
+        delay: 0,
+        duration: 1,
+        y: 300,
+        ease: "power4.inOut"
+    })
+})
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.from(".relax-info", {
+    scrollTrigger: ".relax-info",
+    x: 300,
+    duration: 2,
+    ease: "expo.inOut"
+})
+
+gsap.to(".line-progress-info", {
+    scrollTrigger: ".line-progress-info",
+    duration: 8,
+    scaleY: 1,
+    ease: "linear"
+})
