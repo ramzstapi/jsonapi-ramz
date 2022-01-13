@@ -44,5 +44,5 @@ hamburger.click(function(){
     $(".half-circle2").toggleClass("hidden");
     $(".svg-waves").toggleClass("hidden");
     $("footer").toggleClass("hidden");
-
+    navbarAnimate.restart();
 })
