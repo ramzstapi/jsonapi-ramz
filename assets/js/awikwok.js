@@ -1,26 +1,3 @@
-// var tl = gsap.timeline()
-
-// tl.from(".text", {
-//     duration: 1,
-//     delay: 0,
-//     stagger: 0.03,
-//     ease: "Power4.easeOut",
-//     y: 200
-// })
-// tl.to(".text", {
-//     duration: 1,
-//     delay: 1.5,
-//     stagger: 0.03,
-//     ease: "Power4.in",
-//     y: -200
-// })
-// tl.to(".page-load", {
-//     duration: 1,
-//     delay: 1,
-//     y: -1000,
-//     ease: "power1.out"
-// })
-
 gsap.from(".text", {
     duration: 1,
     delay: 0,
@@ -41,6 +18,24 @@ gsap.to(".page-load", {
     delay: 2.5,
     y: -2000,
     ease: "power4.inOut"
+})
+
+gsap.from(".animate-profile", {
+    duration: 1,
+    delay: 2.8,
+    opacity: 0,
+    x: 20,
+    ease: "Power4.easeOut"
+})
+
+var navbarAnimate = gsap.timeline({delay: 2.8});
+navbarAnimate.from(".animate-navbar", {
+    stagger: 0.3,
+    duration: 0.5,
+    opacity: 0,
+    // delay: 2.8,
+    ease: "Power4.easeOut",
+    y: 10
 })
 
 
