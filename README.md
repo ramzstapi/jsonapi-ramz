@@ -18,4 +18,4 @@ Oh i almost forgot, so if you wanna see my portfolio with best experience, chang
 ![image](https://user-images.githubusercontent.com/97384153/149063086-1a1812f3-9b3d-490d-9013-5dbb501d12a7.png)
 
 
-![link](https://ramadityo.github.io/)
+[link](https://ramadityo.github.io/)
