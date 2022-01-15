@@ -30,7 +30,16 @@ McButton.click(function () {
 });
 
 const hamburger = $(".menu");
-
+var tl = new TimelineMax()
+  .from(".animate-navbar-mobile",{ 
+    stagger: 0.3,
+    duration: 0.5,
+    opacity: 0,
+    // delay: 2.8,
+    ease: "Power4.easeOut",
+    y: 10
+})
+.reverse();
 hamburger.click(function(){
     $(".span").toggleClass("toggle");
     $("ul").toggleClass("toggle");
@@ -44,5 +53,5 @@ hamburger.click(function(){
     $(".half-circle2").toggleClass("hidden");
     $(".svg-waves").toggleClass("hidden");
     $("footer").toggleClass("hidden");
-    navbarAnimate.restart();
+    tl.reversed(!tl.reversed());
 })
