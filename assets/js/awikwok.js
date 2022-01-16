@@ -19,6 +19,9 @@ gsap.to(".page-load", {
     y: -2000,
     ease: "power4.inOut"
 })
+setTimeout(function() {
+    document.querySelector(".page-load").style.display = "none";
+}, 3800)
 
 gsap.from(".animate-profile", {
     duration: 1,
@@ -54,6 +57,9 @@ accept.addEventListener('click', () =>{
         y: 300,
         ease: "power4.inOut"
     })
+    setTimeout(function() {
+        document.querySelector(".recommended-view").style.display = "none";
+    }, 2000)
 })
 
 gsap.registerPlugin(ScrollTrigger);
