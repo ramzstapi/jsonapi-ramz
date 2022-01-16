@@ -21,7 +21,7 @@ gsap.to(".page-load", {
 })
 setTimeout(function() {
     document.querySelector(".page-load").style.display = "none";
-}, 3800)
+}, 5000)
 
 gsap.from(".animate-profile", {
     duration: 1,
