@@ -78,3 +78,18 @@ gsap.to(".line-progress-info", {
     scaleY: 1,
     ease: "linear"
 })
+
+gsap.from(".animating-image", {
+    scrollTrigger: ".animating-image",
+    duration: 1.3,
+    width: 0,
+    ease: "Power4.easeOut"
+})
+gsap.from(".anim-text", {
+    scrollTrigger: ".anim-text",
+    duration: 1.3,
+    opacity: 0,
+    y: 5,
+    stagger: 0.3,
+    ease: "Power4.easeOut"
+})
