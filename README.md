@@ -27,4 +27,5 @@ this website have little bit lacks, such as:
    - more lower
 
 **2. unrecommended for low-end specs**
+
    Because my website have a lot of animation (Maybe), so it will can be laggish for low-end PC
