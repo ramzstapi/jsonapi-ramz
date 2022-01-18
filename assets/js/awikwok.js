@@ -85,6 +85,15 @@ gsap.from(".animating-image", {
     width: 0,
     ease: "Power4.easeOut"
 })
+
+gsap.to(".scale-animate", {
+    scrollTrigger: ".scale-animate",
+    duration: 1,
+    delay: .60,
+    scale: 1.1,
+    ease: "Power4.easeInOut"
+})
+
 gsap.from(".anim-text", {
     scrollTrigger: ".anim-text",
     duration: 1.3,
