@@ -19,3 +19,11 @@ Oh i almost forgot, so if you wanna see my portfolio with best experience, chang
 
 
 [Demo](https://ramadityo.github.io/)
+
+this website have little bit lacks, such as:
+**1. Unsupported small devices** 
+   - (320 x 568) px
+   - more lower
+
+**2. unrecommended for low-end specs**
+   Because my website have a lot of animation (Maybe), so it will can be laggish for low-end PC
