@@ -1,4 +1,4 @@
-# ramadityo.github.io
+# Readme pls ;)
 
 Hello guys, my name is Ramz and welcome to my portfolio repository, i hope you can learn with my code and get inspirated!
 
