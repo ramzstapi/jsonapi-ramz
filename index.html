@@ -10,7 +10,7 @@
 	<meta property="og:url" content="https://ramadityo.github.io/" />
 	<meta property="og:site_name" content="Ramadityo" />
 	<meta name="twitter:card" content="summary_large_image" />
-<!-- 	<meta name="twitter:image" content="https://ramadityo.github.io/media/png/web-preview.png"> -->
+	<meta name="twitter:image" content="https://rzcodez.github.io/ramadityo/media/png/web-preview.png">
 	<meta name="description" content="Welcome to my personal portfolio!, actually i'm still beginner so please be cooperative to me and thanks for visiting my website!">
     <meta name="keywords" content="RzCodez,Ramz,Kafka Ramadityo,Ramadityo,Tyo,Kafka">
    	<meta name="author" content="Kafka Ramadityo">
@@ -32,7 +32,7 @@
     <title>Ramadityo | Front End Web Developer</title>
 </head>
 <body>
-    <div class="page-load" area-hidden="true">
+    <!-- <div class="page-load" area-hidden="true">
         <div class="up-wrap">
             <div class="word" style="display: flex;" area-hidden="true">
                 <p class="text">W</p>
@@ -53,7 +53,7 @@
                 <p class="text">s</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="recommended-view">
         <p>Highly recommended to change the resolution to 1920 x 1080 and display zoom to 100% for the best experience</p>
         <button class="accept">OK</button>
@@ -96,7 +96,7 @@
                         <a href="#about" class="buttonMore go-Bottom">
                             <p>View more</p>
                         </a>
-                        <a href="#" class="underlineText">DOWNLOAD CV</a>
+                        <div id="DigitalCLOCK" class="menggokil" onload="showTime()"></div>
                     </div>
                     <img src="./media/svg/hero-img.svg" alt="hero-img">
                 </div>
@@ -127,6 +127,7 @@
                         <p class="anim-text" style="color: white">Hi! My name is Kafka Ramadityo, i'm an Front-End Web Developer, and i was born in Samarinda, Indonesia on 1 November 2004 and now i live in Samarinda. I'm High School Student at Vocational School (SMKN 7 Samarinda) majoring as Network Engineer Student.</p>
                         <br>
                         <p class="anim-text" style="color: white;">I start Programming in 2021 and learning HTML, CSS, JS, and other stuff like SVGator, and also doing some photo editing with Photoshop in Photo Manipulation, Web Design and Anime Minimalist Edit. Take a look at my work and if you'd like to discuss your project, please let me know.</p>
+                        <a href="#" class="underlineText anim-text">DOWNLOAD CV</a>
                     </div>
                 </div>
             </section>
@@ -954,9 +955,9 @@
             <div class="contact-section" id="contact">
                 <div class="relax-info">
                     <div class="line-progress-info"></div>
-                    <p style="font-weight: 500; font-family: Roboto;">"<span id="quotes"></span>"</p>
+                    <p style="font-weight: bold; font-family: 'Times New Roman', Times, serif;">"<span id="quotes"></span>"</p>
                     <br>
-                    <p style="font-family: Roboto;" id="author"></p>
+                    <p style="font-family: 'Times New Roman', Times, serif;" id="author"></p>
                 </div>
                 <div class="contact-form">
                     <h1>Contact <span style="color: crimson;">Me!</span></h1>
@@ -981,7 +982,11 @@
                     </form>
                 </div>
             </div>
-
+            <div class="quotes-for-tabmobile" style="max-width: 100%; min-height: 10px;padding: 5px;background: black;">
+                <p style=" font-weight: 500;font-family: 'Times New Roman', Times, serif;color:white;text-align: center;" class="quotesAshiap">"<span id="quotes-tm"></span>"</p>
+                <br>
+                <p style="font-family: 'Times New Roman', Times, serif;color:white;text-align: center;" id="author-tm"></p>
+            </div>
             <footer>
                 <p>Copyright © 2022 Kafka Ramadityo</p>
             </footer>
@@ -1004,6 +1009,7 @@
         <script src="./assets/js/jquery-easing.js"></script>
         <script src="./assets/js/p-scroll.js"></script>
         <script src="./assets/js/gabut.js"></script>
+        <script src="./assets/js/clock.js"></script>
         <script src="./assets/js/quotesAPI.js"></script>
         <script src="./assets/js/scroll-detector.js"></script>
         <!-- <script src="./assets/js/scroll-anjay.js"></script> -->
