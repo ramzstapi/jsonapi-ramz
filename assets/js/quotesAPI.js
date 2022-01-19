@@ -1,6 +1,9 @@
 const text=document.getElementById("quotes");
 const author=document.getElementById("author");
 
+const text_tm=document.getElementById("quotes-tm");
+const author_tm=document.getElementById("author-tm");
+
 const getNewQuote = async () =>
 {
     //api for quotes
@@ -29,5 +32,7 @@ const getNewQuote = async () =>
     //function to dynamically display the quote and the author
     text.innerHTML=quote;
     author.innerHTML="~ "+auth;
+    text_tm.innerHTML=quote;
+    author_tm.innerHTML="~ "+auth;
 }
 getNewQuote();
