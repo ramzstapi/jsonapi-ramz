@@ -31,6 +31,5 @@ this website have little bit lacks, such as:
    Because my website have a lot of animation (Maybe), so it will can be laggish for low-end PC
 
 **3. Slow image rendering for 3G - Lower Internet**
-   ---
 
    
