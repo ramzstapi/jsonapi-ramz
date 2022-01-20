@@ -33,3 +33,4 @@ this website have little bit lacks, such as:
 **3. Slow image rendering for 3G - Lower Internet (depending on your area)**
    
    Sometimes, when my client is visiting my website it's very slow to rendering my image and the other clients it's very fast to render it in 3G Network
+   ---
