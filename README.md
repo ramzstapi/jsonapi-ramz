@@ -24,8 +24,13 @@ this website have little bit lacks, such as:
 
 **1. Unsupported small devices** 
    - (320 x 568) px
-   - more lower
+   - more smaller
 
 **2. Unrecommended for low-end specs**
 
    Because my website have a lot of animation (Maybe), so it will can be laggish for low-end PC
+
+**3. Slow image rendering for 3G - Lower Internet**
+   ---
+
+   
