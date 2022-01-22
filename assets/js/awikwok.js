@@ -5,7 +5,17 @@
 //     ease: "Expo.easeInOut"
 // })
 
+gsap.to(".viewport", {
+    duration: .5,
+    height: 0,
+    ease: "Expo.easeInOut"
+})
 window.addEventListener('load', function(){
+    gsap.to(".viewport", {
+        duration: .5,
+        height: "100%",
+        ease: "Expo.easeInOut"
+    })
     gsap.to(".page-load", {
         duration: 1.5,
         // delay: 2.5,
