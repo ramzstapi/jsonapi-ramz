@@ -1,54 +1,57 @@
-gsap.from(".text", {
-    duration: 1,
-    delay: 0,
-    stagger: 0.03,
-    opacity: 1,
-    ease: "Power4.easeOut",
-    y: 200
-})
-gsap.to(".text", {
-    duration: 1,
-    delay: 2,
-    stagger: 0.03,
-    ease: "power4.inOut",
-    y: -200
-})
-gsap.to(".page-load", {
-    duration: 1,
-    delay: 2.5,
-    y: -2000,
-    ease: "power4.inOut"
-})
-setTimeout(function() {
-    document.querySelector(".page-load").style.display = "none";
-}, 5000)
 
-gsap.from(".animate-profile", {
-    duration: 1,
-    delay: 2.8,
-    opacity: 0,
-    x: 20,
-    ease: "Power4.easeOut"
+// gsap.from(".page-load", {
+//     duration: 1.5,
+//     opacity: 0,
+//     ease: "Expo.easeInOut"
+// })
+
+window.addEventListener('load', function(){
+    gsap.to(".page-load", {
+        duration: 1.5,
+        // delay: 2.5,
+        y: -1000,
+        ease: "Expo.easeInOut"
+    })
+    gsap.to(".blank-white",{
+        duration: 1.5,
+        delay: 0.05,
+        y: -1000,
+        ease: "Expo.easeInOut"
+    })
+    setTimeout(function() {
+        document.querySelector(".page-load").style.display = "none";
+    }, 5000)
+    var navbarAnimate = gsap.timeline({delay: 1});
+    navbarAnimate.from(".animate-navbar", {
+        stagger: 0.3,
+        duration: 0.5,
+        opacity: 0,
+        // delay: 2.8,
+        ease: "Power4.easeOut",
+        y: 10
+    })
+
+    gsap.from(".recommended-view", {
+        delay: 1.5,
+        duration: 1,
+        y: 300,
+        ease: "power4.inOut"
+    })
+
+    gsap.from(".animate-profile", {
+        duration: 1,
+        delay: 1,
+        opacity: 0,
+        x: 20,
+        ease: "Power4.easeOut"
+    })
+    document.querySelector(".recommended-view").style.display = "flex";
+    document.querySelector(".blank-white").style.backgroundColor = "crimson";
 })
 
-var navbarAnimate = gsap.timeline({delay: 2.8});
-navbarAnimate.from(".animate-navbar", {
-    stagger: 0.3,
-    duration: 0.5,
-    opacity: 0,
-    // delay: 2.8,
-    ease: "Power4.easeOut",
-    y: 10
-})
+document.querySelector(".recommended-view").style.display = "none";
 
-
-gsap.from(".recommended-view", {
-    delay: 3.6,
-    duration: 1,
-    y: 300,
-    ease: "power4.inOut"
-})
-
+// Accept Button
 const accept = document.querySelector(".accept");
 accept.addEventListener('click', () =>{
     gsap.to(".recommended-view", {
@@ -57,10 +60,12 @@ accept.addEventListener('click', () =>{
         y: 300,
         ease: "power4.inOut"
     })
+
     setTimeout(function() {
         document.querySelector(".recommended-view").style.display = "none";
     }, 2000)
 })
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,7 +90,6 @@ gsap.from(".animating-image", {
     width: 0,
     ease: "Power4.easeOut"
 })
-
 gsap.to(".scale-animate", {
     scrollTrigger: ".scale-animate",
     duration: 1,
@@ -93,7 +97,6 @@ gsap.to(".scale-animate", {
     scale: 1.1,
     ease: "Power4.easeInOut"
 })
-
 gsap.from(".anim-text", {
     scrollTrigger: ".anim-text",
     duration: 1.3,
