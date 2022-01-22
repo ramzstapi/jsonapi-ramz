@@ -57,6 +57,13 @@ window.addEventListener('load', function(){
     })
     document.querySelector(".recommended-view").style.display = "flex";
     document.querySelector(".blank-white").style.backgroundColor = "crimson";
+    gsap.from(".appear-text", {
+        duration: 1,
+        delay: .9,
+        y: 100,
+        stagger: 0.1,
+        ease: "Power3.easeInOut"
+    })
 })
 
 document.querySelector(".recommended-view").style.display = "none";
