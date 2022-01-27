@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,7 @@
     <meta name="keywords" content="RzCodez,Ramz,Kafka Ramadityo,Ramadityo,Tyo,Kafka">
    	<meta name="author" content="Kafka Ramadityo">
     <meta name="theme-color" content="#1C1C1C">
+        <link rel="stylesheet" href="./assets/css/locomotive-scroll.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/breakpoints.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./media/photos/favicon.png">
@@ -27,44 +29,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <title>Ramadityo | Front End Web Developer</title>
 </head>
 <body>
-    <div class="page-load" area-hidden="true">
+    <div class="page-load animate-slide-up" area-hidden="true">
         <div class="loadingio-spinner-eclipse-jf5e22bpfve"><div class="ldio-g0e1vuxutig">
             <div></div>
             </div></div>
     </div>
-    <div class="blank-white"></div>
+    <div class="blank-white animate-slide-up"></div>
     <div class="recommended-view">
         <p>Highly recommended to change the resolution to 1920 x 1080 and display zoom to 100% for the best experience</p>
         <button class="accept">OK</button>
     </div>
+    <nav>
+        <a href="#">
+            <img src="./media/photos/profile-home.png" class="animate-profile" width="158px" height="35px" alt="profie-photo">
+        </a>
+        <ul>
+            <li class="animate-navbar"><a href="#" style="display: block;" class="navbarLinks">Home</a></li>
+            <li class="animate-navbar"><a href="#about" style="display: block;" class="navbarLinks">About</a></li>
+            <li class="animate-navbar"><a href="#projects" style="display: block;" class="navbarLinks">Projects</a></li>
+            <li class="animate-navbar"><a href="#contact" style="display: block;" class="navbarLinks">Contact</a></li>
+            <li class="animate-navbar-mobile"><a href="#" style="display: block;" class="navbarLinks">Home</a></li>
+            <li class="animate-navbar-mobile"><a href="#about" style="display: block;" class="navbarLinks">About</a></li>
+            <li class="animate-navbar-mobile"><a href="#projects" style="display: block;" class="navbarLinks">Projects</a></li>
+            <li class="animate-navbar-mobile"><a href="#contact" style="display: block;" class="navbarLinks">Contact</a></li>
+        </ul>
+        <div class="menu" data="hamburger-menu">
+            <div class="span"></div>
+            <div class="span"></div>
+            <div class="span"></div>
+        </div>
+    </nav>
     <div class="viewport">
         <div class="container">
             <section class="home-section">
-                <nav>
-                    <a href="#">
-                        <img src="./media/photos/profile-home.png" class="animate-profile" width="158px" height="35px" alt="profie-photo">
-                    </a>
-                    <ul>
-                        <li class="animate-navbar"><a href="#" style="display: block;" class="navbarLinks">Home</a></li>
-                        <li class="animate-navbar"><a href="#about" style="display: block;" class="navbarLinks">About</a></li>
-                        <li class="animate-navbar"><a href="#projects" style="display: block;" class="navbarLinks">Projects</a></li>
-                        <li class="animate-navbar"><a href="#contact" style="display: block;" class="navbarLinks">Contact</a></li>
-                        <li class="animate-navbar-mobile"><a href="#" style="display: block;" class="navbarLinks">Home</a></li>
-                        <li class="animate-navbar-mobile"><a href="#about" style="display: block;" class="navbarLinks">About</a></li>
-                        <li class="animate-navbar-mobile"><a href="#projects" style="display: block;" class="navbarLinks">Projects</a></li>
-                        <li class="animate-navbar-mobile"><a href="#contact" style="display: block;" class="navbarLinks">Contact</a></li>
-                    </ul>
-                    <div class="menu" data="hamburger-menu">
-                        <div class="span"></div>
-                        <div class="span"></div>
-                        <div class="span"></div>
-                    </div>
-                </nav>
                 <div class="hero-container">
                     <div class="headlines">
                         <div style="overflow: hidden;">
@@ -288,7 +291,7 @@
                 <div class="line-svg2">
                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 497.34 499.54"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:9px;}</style></defs><title>garis</title><line class="cls-1" x1="492.84" y1="4.5" x2="4.5" y2="495.04"/></svg>
                 </div>
-                <div class="dotted-pattern">
+                <div class="dotted-pattern" style="transform: translateX(50%);">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve">
                         <style type="text/css">
@@ -945,11 +948,13 @@
                   </svg>
             </div>
             <div class="contact-section" id="contact">
-                <div class="relax-info">
-                    <div class="line-progress-info"></div>
-                    <p style="font-weight: bold; font-family: 'Times New Roman', Times, serif;">"<span id="quotes"></span>"</p>
-                    <br>
-                    <p style="font-family: 'Times New Roman', Times, serif;" id="author"></p>
+                <div class="go-back">
+                    <div class="relax-info">
+                        <div class="line-progress-info"></div>
+                        <p style="font-weight: bold; font-family: 'Times New Roman', Times, serif;">"<span id="quotes"></span>"</p>
+                        <br>
+                        <p style="font-family: 'Times New Roman', Times, serif;" id="author"></p>
+                    </div>
                 </div>
                 <div class="contact-form">
                     <h1>Contact <span style="color: crimson;">Me!</span></h1>
@@ -996,6 +1001,12 @@
             });
         })
     </script>
+    <!-- <script>
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySelector(".viewport"),
+            smooth: true,
+        });
+    </script> -->
         <script src="./assets/js/hamburger.js"></script>
         <script src="./assets/js/ScrollToAbout.js"></script>
         <script src="./assets/js/jquery-easing.js"></script>
@@ -1004,7 +1015,8 @@
         <script src="./assets/js/clock.js"></script>
         <script src="./assets/js/quotesAPI.js"></script>
         <script src="./assets/js/scroll-detector.js"></script>
-        <script src="./assets/js/scroll-anjay.js"></script>
+        <!-- <script src="./assets/js/scroll-anjay.js"></script> -->
+        <script src="./assets/js/locomotive-striggerUpdate.js"></script>
         <script src="./assets/js/awikwok.js"></script>
     <!-- Scripts -->
 </body>
