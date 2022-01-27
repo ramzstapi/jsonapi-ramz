@@ -77,7 +77,6 @@ gsap.to(".dotted-pattern", {
   scrollTrigger: {
     trigger: ".projects-collection",
     scroller: ".viewport",
-    markers: true,
     scrub: 0.05,
     toggleActions: "play reverse none restart",
     start: "top center",
@@ -92,7 +91,6 @@ gsap.to(".line-svg", {
   scrollTrigger: {
     trigger: ".projects-collection",
     scroller: ".viewport",
-    markers: true,
     scrub: 0.05,
     toggleActions: "play reverse none restart",
     start: "top center",
@@ -107,7 +105,6 @@ gsap.to(".line-svg2", {
   scrollTrigger: {
     trigger: ".projects-collection",
     scroller: ".viewport",
-    markers: true,
     scrub: 0.05,
     toggleActions: "play reverse none restart",
     start: "top center",
@@ -121,7 +118,6 @@ gsap.to(".dotted-pattern2", {
   scrollTrigger: {
     trigger: ".projects-collection",
     scroller: ".viewport",
-    markers: true,
     scrub: .05,
     toggleActions: "play reverse none reverse",
     start: "top center",
