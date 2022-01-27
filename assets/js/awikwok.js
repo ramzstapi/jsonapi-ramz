@@ -1,10 +1,4 @@
 
-// gsap.from(".page-load", {
-//     duration: 1.5,
-//     opacity: 0,
-//     ease: "Expo.easeInOut"
-// })
-
 gsap.to(".viewport", {
     duration: .5,
     height: 0,
@@ -81,44 +75,4 @@ accept.addEventListener('click', () =>{
     setTimeout(function() {
         document.querySelector(".recommended-view").style.display = "none";
     }, 2000)
-})
-
-
-gsap.registerPlugin(ScrollTrigger);
-
-
-gsap.from(".relax-info", {
-    scrollTrigger: ".relax-info",
-    x: 300,
-    duration: 2,
-    ease: "expo.inOut"
-})
-
-gsap.to(".line-progress-info", {
-    scrollTrigger: ".line-progress-info",
-    duration: 8,
-    scaleY: 1,
-    ease: "linear"
-})
-
-gsap.from(".animating-image", {
-    scrollTrigger: ".animating-image",
-    duration: 1.3,
-    width: 0,
-    ease: "Power4.easeOut"
-})
-gsap.to(".scale-animate", {
-    scrollTrigger: ".scale-animate",
-    duration: 1,
-    delay: .60,
-    scale: 1.1,
-    ease: "Power4.easeInOut"
-})
-gsap.from(".anim-text", {
-    scrollTrigger: ".anim-text",
-    duration: 1.3,
-    opacity: 0,
-    y: 5,
-    stagger: 0.3,
-    ease: "Power4.easeOut"
 })
