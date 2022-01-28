@@ -14,13 +14,13 @@ window.addEventListener('load', function(){
         duration: 1.5,
         // delay: 2.5,
         y: -1000,
-        ease: "Expo.easeInOut"
+        ease: "Power4.easeInOut"
     })
     gsap.to(".blank-white",{
         duration: 1.5,
         delay: 0.05,
         y: -1000,
-        ease: "Expo.easeInOut"
+        ease: "Power4.easeInOut"
     })
     setTimeout(function() {
         document.querySelector(".page-load").style.display = "none";
