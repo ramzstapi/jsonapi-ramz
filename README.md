@@ -12,6 +12,7 @@ Technologies:
 7. Font Awesome
 8. Ion Icons
 9. Locomotive Scroll <= Smooth Scroll + Parallax (Testing)
+10. Barba.js (Soon)
 
 Oh i almost forgot, so if you wanna see my portfolio with best experience, change the resolution to 1920 x 1080 and display scale to 100%, example below
 
