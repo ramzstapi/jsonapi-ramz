@@ -8,6 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".viewport"),
   smooth: true,
+  smartphone: {
+    smooth: true
+  },
+  tablet: {
+    smooth: true
+  }
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
@@ -77,7 +83,7 @@ gsap.to(".dotted-pattern", {
   scrollTrigger: {
     trigger: ".projects-collection",
     scroller: ".viewport",
-    scrub: 0.05,
+    scrub: 1,
     toggleActions: "play reverse none restart",
     start: "top center",
     end: "bottom center"
@@ -86,7 +92,6 @@ gsap.to(".dotted-pattern", {
   x: "80%",
   ease: "Power4.easeInOut"
 })
-
 gsap.to(".line-svg", {
   scrollTrigger: {
     trigger: ".projects-collection",
@@ -118,7 +123,7 @@ gsap.to(".dotted-pattern2", {
   scrollTrigger: {
     trigger: ".projects-collection",
     scroller: ".viewport",
-    scrub: .05,
+    scrub: 1,
     toggleActions: "play reverse none reverse",
     start: "top center",
     end: "bottom center"
