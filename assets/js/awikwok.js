@@ -13,13 +13,13 @@ window.addEventListener('load', function(){
     gsap.to(".page-load", {
         duration: 1.5,
         // delay: 2.5,
-        y: -1000,
+        y: -1500,
         ease: "Power4.easeInOut"
     })
     gsap.to(".blank-white",{
         duration: 1.5,
         delay: 0.05,
-        y: -1000,
+        y: -1500,
         ease: "Power4.easeInOut"
     })
     setTimeout(function() {
