@@ -145,6 +145,19 @@ gsap.from(".anim-text", {
     ease: "Power4.easeOut"
 })
 
+gsap.to("nav", {
+  scrollTrigger: {
+    trigger: ".about",
+    scroller: ".viewport",
+    start: "40% center",
+    end: "bottom center",
+    toggleActions: "play none reverse reverse"
+    // markers: true
+  },
+  duration: .3,
+  background: "white",
+  ease: "Power4.InOut"
+})
 
 // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());

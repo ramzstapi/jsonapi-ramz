@@ -203,7 +203,7 @@ nav {
   padding-left: 8rem; */
   padding-right: 8rem;
   padding-left: 8rem;
-  Z-INDEX: 10;
+  Z-INDEX: 5;
   /* padding:1rem 2.5rem 1rem 2.5rem; */
   align-items: center;
   position: fixed;
@@ -229,6 +229,7 @@ nav {
   display: none;
 }
 ul {
+  z-index:6;
   display: flex;
   align-items: center;
 }
